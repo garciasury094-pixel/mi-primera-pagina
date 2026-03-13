@@ -3,7 +3,7 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Galería - Floristería</title>
+<title>Servicios - Floristería</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
@@ -43,22 +43,31 @@ text-align:center;
 color:#2e8b57;
 }
 
-.galeria{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-gap:20px;
+.tarjetas{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
 margin-top:30px;
 }
 
-.galeria img{
-width:100%;
+.tarjeta{
+background:white;
+width:230px;
+padding:20px;
 border-radius:12px;
+text-align:center;
 box-shadow:0px 0px 10px rgba(0,0,0,0.1);
-transition:transform 0.3s;
 }
 
-.galeria img:hover{
-transform:scale(1.05);
+.tarjeta img{
+width:100%;
+border-radius:10px;
+}
+
+.precio{
+color:#c0392b;
+font-weight:bold;
 }
 
 footer{
@@ -87,33 +96,61 @@ margin-top:40px;
 
 <div class="contenedor">
 
-<h1>Galería de Ramos y Flores 💐</h1>
+<h1>Nuestros Servicios 💐</h1>
 
 <p style="text-align:center;">
-Observa algunos de nuestros arreglos y ramos florales.
+Ofrecemos diferentes tipos de arreglos florales para cada ocasión especial.
 </p>
 
-<div class="galeria">
+<div class="tarjetas">
+
+<div class="tarjeta">
 
 <img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
 
+<h3>Ramos para cumpleaños</h3>
+
+<p>Hermosos ramos de flores para celebrar momentos especiales.</p>
+
+<p class="precio">Desde Q90</p>
+
+</div>
+
+<div class="tarjeta">
+
 <img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+
+<h3>Arreglos para aniversarios</h3>
+
+<p>Flores elegantes para demostrar amor y cariño.</p>
+
+<p class="precio">Desde Q120</p>
+
+</div>
+
+<div class="tarjeta">
 
 <img src="https://images.unsplash.com/photo-1526045612212-70caf35c14df">
 
-<img src="https://images.unsplash.com/photo-1468327768560-75b778cbb551">
+<h3>Decoración para eventos</h3>
+
+<p>Decoraciones florales para bodas, fiestas y eventos especiales.</p>
+
+<p class="precio">Consultar precio</p>
+
+</div>
+
+<div class="tarjeta">
 
 <img src="https://images.unsplash.com/photo-1470115636492-6d2b56f9146d">
 
-<img src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92">
+<h3>Entrega a domicilio</h3>
 
-<img src="https://images.unsplash.com/photo-1518709268805-4e9042af9f23">
+<p>Llevamos flores hasta la puerta de tu casa o para sorprender a alguien.</p>
 
-<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<p class="precio">Servicio disponible</p>
 
-<img src="https://images.unsplash.com/photo-1461354464878-ad92f492a5a0">
-
-<img src="https://images.unsplash.com/photo-1496065187959-7f07b8353c55">
+</div>
 
 </div>
 
@@ -122,7 +159,8 @@ Observa algunos de nuestros arreglos y ramos florales.
 <footer>
 
 <p>Floristería Mancio 🌸</p>
-<p>Galería de ramos y flores</p>
+
+<p>Facebook | Instagram | WhatsApp</p>
 
 </footer>
 

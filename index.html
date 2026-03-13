@@ -2,43 +2,128 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Accesorios para Motocicletas</title>
+    <title>Mi Sitio Web</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-	h1{
-	text-align:center;
-	}
-	p{ text-align:center;}
-        nav {
-            background-color: #f4c2c2;
-            padding: 10px;
-	box-shadow:2px 2px 5px gray;
-        }
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin-right: 15px;
-            font-weight: bold;
-        }
-        nav a:hover {
-            color: #E8A0A8;
-        }
+        <style>
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f5f5;
+}
+
+nav{
+background:#4CAF50;
+padding:15px;
+}
+
+nav a{
+color:white;
+margin:15px;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav a:hover{
+color:#ffd700;
+}
+
+.container{
+width:90%;
+margin:auto;
+padding:20px;
+}
+
+.titulo{
+text-align:center;
+color:#2e7d32;
+}
+
+.productos{
+display:flex;
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card{
+background:white;
+padding:15px;
+border-radius:10px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+width:250px;
+text-align:center;
+}
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.precio{
+color:#e91e63;
+font-size:20px;
+font-weight:bold;
+}
+
+footer{
+background:#2e7d32;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+</style>
+
     </style>
 </head>
 <body>
-
     <nav>
         <a href="index.html">Inicio</a>
         <a href="nosotros.html">Nosotros</a>
-        <a href="servicios.html">Servicios</a>
+        <a href="servicio.html">Servicio</a>
         <a href="contacto.html">Contacto</a>
 		<a href="galeria.html">Galeria</a>
     </nav>
+<div class="container">
 
-    <h1>Accesorios para Motocicletas</h1>
-    <p>Todo lo que tu motocicleta necesita en un solo lugar</p>
+<h1 class="titulo">Bienvenido a nuestra Floristería</h1>
+<p style="text-align:center;">Los mejores arreglos florales para cualquier ocasión.</p>
 
+<div class="productos">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1490750967868-88aa4486c946">
+<h3>Rosas Rojas</h3>
+<p>Hermoso ramo de rosas para ocasiones especiales.</p>
+<p class="precio">Q120</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6">
+<h3>Girasoles</h3>
+<p>Arreglo de girasoles frescos y naturales.</p>
+<p class="precio">Q95</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93">
+<h3>Ramo Mixto</h3>
+<p>Combinación de flores de temporada.</p>
+<p class="precio">Q150</p>
+</div>
+
+</div>
+
+</div>
+  <footer>
+<p>Floristería Mancio 🌸</p>
+<p>Síguenos en nuestras redes</p>
+<p>
+Facebook | Instagram | WhatsApp
+</p>
+</footer>
+   
+    
 </body>
+</html>
 </html>
